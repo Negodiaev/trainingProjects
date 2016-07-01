@@ -1,0 +1,25 @@
+{
+	"name": "alex",
+	"version": "1.0.0",
+	"homepage": "",
+	"authors": [
+		"Alex"
+	],
+	"description": "Boilerplate for html+js+css apps",
+	"moduleType": [
+		"globals"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"normalize.css": "*",
+		"jquery": "2.*"
+	},
+	"main": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
