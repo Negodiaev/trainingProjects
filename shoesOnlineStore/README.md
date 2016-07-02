@@ -1,2 +1,1 @@
-# My boilerplate
-Boilerplate for html+js+css apps.
+# Shoes. Online store project
