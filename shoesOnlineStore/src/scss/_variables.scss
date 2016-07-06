@@ -1,26 +1,27 @@
 $footer: 100px;
 
 $fontSize: 14px;
-$lineHeight: 24px;
+$lineHeight: 1.4;
 $fontFamily: sans-serif;                   $ff: $fontFamily;
 
-$durationFunction: 0.15s ease-in-out;      $df: $durationFunction;
+$durationFunction: 0.2s ease-in-out;      $df: $durationFunction;
 
-$primary: #ff3545;                $p: $primary;
-$secondary: #31c383;              $s: $secondary;
-$background: #eee;                $bg: $background;
-$text: #333;                      $t: $text;
-$link: #00c;                      $l: $link;
-$link-hover: #c00;                $lh: $link-hover;
+$primary: #ee3023;                     $p: $primary;
+$secondary: #31c383;                   $s: $secondary;
+$background: #eee;                     $bg: $background;
+$text: #444;                           $t: $text;
+$link: #000;                           $l: $link;
+$link-hover: inherit;                  $lh: $link-hover;
+$main-bg: #f2f2f2;                     $mbg: $main-bg;
 
-$white: #fff;                     $w: $white;
-$black: #000;                     $b: $black;
-$dark-gray: #3d3d3d;              $dgr: $dark-gray;
-$gray: #5a5a5a;                   $gr: $gray;
-$light-gray: #666;                $lgr: $light-gray;
-$green: #0c3;                     $gn: $green;
-$red: #f00;                       $r: $red;
-$transparent: transparent;        $tr: $transparent;
+$white: #fff;                          $w: $white;
+$black: #000;                          $b: $black;
+$dark-gray: #3d3d3d;                   $dgr: $dark-gray;
+$gray: #5a5a5a;                        $gr: $gray;
+$light-gray: #666;                     $lgr: $light-gray;
+$green: #0c3;                          $gn: $green;
+$red: #f00;                            $r: $red;
+$transparent: transparent;             $tr: $transparent;
 
 $font-thin: 100;
 $font-extra-light: 200;

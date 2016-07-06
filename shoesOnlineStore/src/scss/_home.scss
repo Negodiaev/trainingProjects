@@ -1,2 +1,62 @@
 /*** Home ***/
-.home-page {}
+.main {
+	background: $mbg;
+}
+.bdn {
+	border: none;
+}
+
+.promo {
+	position: relative;
+	top: -19px;	left: 0;
+	&__slide {
+		position: relative;
+		min-height: 676px;
+		z-index: 2;
+	}
+	
+	&__slide-inner {
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		min-height: 784px;
+		z-index: 3;
+	}
+	&__slide-first {
+		background: #9ccd8d;
+	}
+	&__slide-first-inner {
+		background: url(../images/promo-image-1.png) no-repeat;
+		background-position: 87.6% -24px;
+	}
+	&__slide-second {
+		background: #8dc0cd;
+	}
+	&__slide-second-inner {
+		background: url(../images/promo-image-2.png) no-repeat;
+		background-position: 79% -2%;
+	}
+
+	&__slide-content {
+		text-transform: uppercase;
+		color: $b;
+	}
+	&__slide-text {
+		margin-top: 184px;
+		font-size: em(154);
+		font-family: "GothamBold";
+		line-height: .8;
+	}
+	&__slide-text-inner {
+		font-size: 136px;
+	}
+	&__slide-text-extra {
+		padding-left: 7px;
+		font-size: em(69);
+		line-height: 1;
+		color: $w;
+	}
+	&__slide-text-span {
+		color: $p;
+	}
+}

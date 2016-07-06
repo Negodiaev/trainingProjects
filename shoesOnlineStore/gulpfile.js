@@ -138,7 +138,7 @@ gulp.task('myScss:build', function() {
 
 gulp.task('fonts:build', function() {
 		gulp.src(path.src.fonts)
-				.pipe(gulp.dest(path.build.fonts))
+			.pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
@@ -150,7 +150,6 @@ gulp.task('build', [
 	'upload:build',
 	'otherImages:build',
 	'myScss:build'
-
 ]);
 
 
@@ -168,7 +167,7 @@ gulp.task('watch', function(){
 		gulp.start('image:build');
 	});
 	watch([path.watch.fonts], function(event, cb) {
-			gulp.start('fonts:build');
+		gulp.start('fonts:build');
 	});
 	watch([path.watch.upload], function(event, cb) {
 		gulp.start('upload:build');

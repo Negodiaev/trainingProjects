@@ -1,1 +1,231 @@
 /*** Header ***/
+.page-header {
+	padding-top: 41px;
+	&__contacts-wrap {
+		float: right;
+	}
+	&__contacts-item {
+		float: left;
+		margin-right: 32px;
+		&:last-child {
+			margin-right: 5px;
+		}
+	}
+	&__contacts-link{
+		font-size: em(12);
+		font-family: "GothamBook";
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			margin-right: 8px;
+			font-size: 0;
+			background: url(../images/page-icons-sprite.png) no-repeat;
+			background-position: -110px -61px;
+		}
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	&__contacts-phone {
+		&:before {
+			top: -2px;
+			@include size(13px 12px);
+			background-position: -110px -61px;
+		}
+	}
+	&__contacts-mail {
+		&:before {
+			top: -1px;
+			@include size(12px 9px);
+			background-position: -78px -61px;
+		}
+	}
+
+	&__logo-wrap {
+		margin: 0 0 18px -4px;
+	}
+	&__logo-main {
+		font-size: em(58);
+		font-family: "FuturaStdBold";
+		text-transform: uppercase;
+		letter-spacing: em(-.75);
+		color: $p;
+		&:hover {
+			color: $p;
+		}
+	}
+	&__logo-extra {
+		margin-left: 1px;
+		font-family: "FuturaStdLight";
+		color: #201f1f;
+	}
+
+	&__account-wrap {
+		@include clearfix();
+		padding-top: 12px;
+	}
+	&__user-account {
+		@include clearfix();
+		float: right;
+		padding: 8px;
+		border: 1px solid #f9f9f9;
+	}
+	&__user-links {
+		float: left;
+	}
+	&__user-link {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: "GothamRoundedMedium";
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__cart-wrap {
+		padding: 0 12px 0 6px;
+		border-right: 1px solid #e0e0e0;
+	}
+	&__login-wrap {
+		margin-top: 12px;
+		padding: 0 21px;
+	}
+
+	&__cart {
+		padding: 10px;
+		border: 2px solid transparent;
+		border-radius: 50%;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			@include size(17px);
+			font-size: 0;
+			background: url(../images/page-icons-sprite.png) no-repeat;
+			background-position: -46px -10px;
+		}
+		&:hover {
+			border-color: #edebeb;
+			background: #f5f5f5;
+		}
+	}
+
+	&__login {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+
+		}
+	}
+
+	&__register {
+		
+		@include size(167px 41px);
+		border: 1px solid rgba(167, 37, 0, 0.8);
+		border-radius: 4px;
+		font-size: em(19);
+		line-height: 41px;
+		color: $w;
+		background: #466086;
+		@include background-image(linear-gradient(to top, #e82026 0%, #ed2a2d 100%));
+		&:hover {
+			color: $w;
+		}
+	}
+	&__register-arrow {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: -2px; left: 8px;
+		font-size: em(16);
+		font-family: "GothamCondensedMedium";
+	}
+}
+
+.main-nav {
+	float: left;
+	&__wrap {
+		@include clearfix();
+		position: relative;
+		z-index: 4;
+		outline: 1px solid #e0dfe7;
+		@include linear-gradient(to bottom, $w, #f7f7f7);
+	}
+	&__inner {
+		@include clearfix();
+		text-transform: uppercase;
+	}
+	&__item {
+		float: left;
+	}
+	&__link {
+		display: block;
+		padding: 17px 0 16px;
+		font-family: "GothamCondensedBold";
+		color: $t;
+	}
+	&__link-inner {
+		display: block;
+		padding: 0 37px;
+		border-right: 1px solid #cfc8bc;
+		font-size: em(24);
+		line-height: 1.5833;
+	}
+}
+
+.search-form {
+	position: relative;
+	&__wrap {
+		float: right;
+		margin: 26px 28px 0 0;
+	}
+	&__input-wrap {
+		display: block;
+		width: 199px;
+	}
+
+	&__input {
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 27px;
+		width: 100%;
+		border: 1px solid #cfc8bc;
+		border-radius: 15px;
+		font-size: em(12);
+		font-family: Helvetica;
+		line-height: 1.666;
+		color: #ab9f8d;
+		background: #f5f5f5;
+		box-shadow: 0 1px 0 white, inset 0 1px 3px rgba(0, 0, 0, 0.2);
+		&:focus {
+			color: $t;
+			@include transition(color $df, background-color $df, border-color $df);
+			&::-webkit-input-placeholder {
+				color: transparent;
+			}
+			&:-moz-placeholder {
+				color: transparent;
+			}
+			&::-moz-placeholder {
+				color: transparent;
+			}
+			&:-ms-input-placeholder {
+				color: transparent;
+			}
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 4px;	left: 8px;
+		display: inline-block;
+		vertical-align: middle;
+		@include size(12px);
+		border: none;
+		font-size: 0;
+		background: url(../images/page-icons-sprite.png) no-repeat;
+		background-position: -46px -61px;
+	}
+}

@@ -32,30 +32,30 @@
 // 	-o-transition: $args;
 // 	transition: $args;
 // }
-// @mixin clearfix() {
-// 	&:before,
-// 	&:after {
-// 		content: " ";
-// 		display: table;
-// 	}
-// 	&:after {
-// 		clear: both;
-// 	}
-// }
-// @mixin placeholder($color: inherit) {
-// 	&::-webkit-input-placeholder {
-// 		color: $color;
-// 	}
-// 	&:-moz-placeholder {
-// 		color: $color;
-// 	}
-// 	&::-moz-placeholder {
-// 		color: $color;
-// 	}
-// 	&:-ms-input-placeholder {
-// 		color: $color;
-// 	}
-// }
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin placeholder($color: inherit) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&::-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}
 // @mixin bp-large {
 // 	@media only screen and (max-width: 60em) {
 // 		@content;
