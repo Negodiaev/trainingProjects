@@ -2,9 +2,47 @@
 .main {
 	background: $mbg;
 }
+
+// Other classes
 .bdn {
 	border: none;
 }
+
+.btn {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 89px;
+	border: 1px solid rgba(236, 24, 31, 0.8);
+	border-radius: 20px;
+	letter-spacing: .5px;
+	color: $w;
+	background-color: #c9b586;
+	@include background-image(linear-gradient(to top, #e82026 0%, #e82026 100%));
+	@include transition(.2s);
+	&:after {
+		content: '>';
+		position: absolute;
+		top: 0; right: 15px;
+		font-family: "GothamCondensedMedium";
+	}
+	
+	&-price {
+		position: absolute;
+		top: 0; left: 0;
+		display: inline-block;
+		vertical-align: middle;
+		width: 77px;
+		height: 100%;
+		border-right: 1px solid #ab090e;
+		text-align: center;
+	}
+	&:hover {
+		color: $w;
+		box-shadow: inset 0 0 20px rgba(33, 33, 33, .2);
+	}
+}
+// Other classes
 
 .promo {
 	position: relative;
@@ -59,4 +97,89 @@
 	&__slide-text-span {
 		color: $p;
 	}
+
+	&__slide-link {
+		@include size(220px 36px);
+		font-size: em(18);
+		font-family: "GothamLight";
+		line-height: 1.9;
+	}
+	&__slide-link-price {
+		font-size: 14px;
+		font-family: "GothamMedium";
+		line-height: 2.4;
+	}
 }
+
+.categories {
+	position: relative;
+	top: -81px;
+	z-index: 5;
+}
+.category {
+	position: relative;
+	float: left;
+	margin-right: .5%;
+	padding: 19px 50px 31px;
+	width: 33%;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-radius: 2px;
+	font-family: "GothamLight";
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	opacity: 0.98;
+	color: $b;
+	background-color: $w;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 13px; left: 50%;
+		@include size(16px 11px);
+		background: url(../images/page-icons-sprite.png) no-repeat;
+		background-position: -10px -61px;
+		transform: translateX(-50%);
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&__title {
+		margin-bottom: 5px;
+		font-size: em(40);
+	}
+	&__img-wrap {
+		position: relative;
+		margin: 0 auto 14px;
+		@include size(173px);
+		border-radius: 50%;
+	}
+	&__mask-wrap {
+		position: absolute;
+		top: 0; left: 0;
+		@include size(100%);
+		transform: translateY(120%);
+		transition: .25s;
+		opacity: 0;
+	}
+	&__mask-img {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__goods-number {
+		font-size: em(15);
+		line-height: 1;
+	}
+	&__goods-number-extra {
+		display: block;
+		font-size: em(25);
+		font-family: "GothamMedium";
+		color: #f2262c;
+	}
+}
+.category:hover .category__mask-wrap {
+		transform: translateY(0);
+		opacity: 1;
+	}
