@@ -2,6 +2,12 @@
 .main {
 	background: $mbg;
 }
+.spanning {
+	position: relative;
+	top: -81px;	left: 0;
+	margin-bottom: 15px;
+	clear: both;
+}
 
 // Other classes
 .bdn {
@@ -13,15 +19,20 @@
 	display: inline-block;
 	vertical-align: middle;
 	padding-left: 89px;
+	@include size(220px 36px);
 	border: 1px solid rgba(236, 24, 31, 0.8);
 	border-radius: 20px;
+	font-size: em(18);
+	font-family: "GothamLight";
+	line-height: 1.9;
+	text-transform: uppercase;
 	letter-spacing: .5px;
 	color: $w;
 	background-color: #c9b586;
 	@include background-image(linear-gradient(to top, #e82026 0%, #e82026 100%));
 	@include transition(.2s);
 	&:after {
-		content: '>';
+		content: ">";
 		position: absolute;
 		top: 0; right: 15px;
 		font-family: "GothamCondensedMedium";
@@ -35,6 +46,9 @@
 		width: 77px;
 		height: 100%;
 		border-right: 1px solid #ab090e;
+		font-size: 14px;
+		font-family: "GothamMedium";
+		line-height: 2.4;
 		text-align: center;
 	}
 	&:hover {
@@ -97,23 +111,11 @@
 	&__slide-text-span {
 		color: $p;
 	}
-
-	&__slide-link {
-		@include size(220px 36px);
-		font-size: em(18);
-		font-family: "GothamLight";
-		line-height: 1.9;
-	}
-	&__slide-link-price {
-		font-size: 14px;
-		font-family: "GothamMedium";
-		line-height: 2.4;
-	}
 }
 
 .categories {
 	position: relative;
-	top: -81px;
+	margin-bottom: 30px;
 	z-index: 5;
 }
 .category {
@@ -133,7 +135,7 @@
 	background-color: $w;
 	
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 13px; left: 50%;
 		@include size(16px 11px);
@@ -151,7 +153,7 @@
 	}
 	&__img-wrap {
 		position: relative;
-		margin: 0 auto 14px;
+		margin: 0 auto 18px;
 		@include size(173px);
 		border-radius: 50%;
 	}
@@ -159,7 +161,7 @@
 		position: absolute;
 		top: 0; left: 0;
 		@include size(100%);
-		transform: translateY(120%);
+		transform: translateY(50%);
 		transition: .25s;
 		opacity: 0;
 	}
@@ -180,6 +182,129 @@
 	}
 }
 .category:hover .category__mask-wrap {
-		transform: translateY(0);
-		opacity: 1;
+	transform: translateY(-5%);
+	opacity: 1;
+}
+
+.products-section {
+	&__inner {
+		padding: 26px 1%;
+		border-radius: 4px;
+		font-family: "GothamMedium";
+		background: $w;
 	}
+
+	&__title-wrap {
+		@include clearfix();
+		margin-bottom: 15px;
+	}
+	&__title {
+		float: left;
+		padding-left: 6px;
+		width: 80%;
+		font-size: em(24);
+		line-height: 1;
+		text-transform: uppercase;
+		color: $b;
+	}
+	&__title-inner {
+		color: #f2262c;
+	}
+
+	&__show-all {
+		float: right;
+		padding: 5px 10px 0 0;
+		width: 20%;
+		font-family: "Arial";
+		font-style: italic;
+		text-align: right;
+		text-transform: lowercase;
+		color: #626162;
+		&:before {
+			content: "";
+			display: inline-block;
+			@include triangle(8px, #4c4b4b, right);
+			position: relative;
+			top: 0; left: -7px;
+		}
+		&:hover {
+			color: #626162;
+			opacity: .9;
+		}
+	}
+	
+	&__items-list {
+		@include clearfix();
+	}
+	&__item-wrap {
+		float: left;
+		margin: 0 .6666% 12px 0;
+		width: 24.5%;
+		border: 1px solid rgba(0, 0, 0, 0.09);
+		border-radius: 4px;
+		text-align: center;
+		opacity: 0.92;
+		background: $w;
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+	}
+	&__item {
+		padding: 4px 9px 10px;
+		border: 6px solid transparent;
+		border-radius: 4px;
+		@include transition(.15s);
+	}
+
+	&__brand-logo {
+		height: 50px;
+	}
+	&__item-img-wrap {
+		margin-bottom: 20px;
+		height: 160px;
+		border-bottom: 1px solid #e1e0df;
+		line-height: 160px;
+		overflow: hidden;
+	}
+	&__item-img {
+		display: inline-block;
+		vertical-align: bottom;
+		padding-bottom: 10px;
+	}
+	&__item-name {
+		display: table-cell;
+		vertical-align: bottom;
+		padding: 0 5px 0 27px;
+		height: 35px;
+		font-size: em(17);
+		line-height: 1;
+		text-align: left;
+		color: $b;
+	}
+
+	&__item-link {
+		@include size(176px 29px);
+		margin-top: 10px;
+		padding-left: 55px;
+		border: 1px solid rgba(167, 37, 0, 0.8);
+		font-size: em(14);
+		line-height: 2;
+		text-shadow: 0.5px 0.9px 2px rgba(0, 0, 0, 0.29);
+		@include background-image(linear-gradient(to top, #e82026 0%, #ea2328 100%));
+		&:after {
+			right: 5px;
+			font-size: em(19);
+			line-height: 1.4;
+		}
+		&:hover {
+			box-shadow: none;
+		}
+	}
+	&__link-price {
+		width: 70px;
+		font-size: em(11);
+	}
+}
+.products-section__item-wrap:hover .products-section__item {
+	border: 6px solid #fe1e13;
+}

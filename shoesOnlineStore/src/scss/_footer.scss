@@ -1,5 +1,81 @@
 /*** Footer ***/
-footer {
+.page-footer {
 	margin-top: -$footer;
 	height: $footer;
+	color: $w;
+	background: #f2262c;
+	&__content {
+		@include clearfix();
+		padding-top: 38px;
+	}
+	&__content-inner {
+		float: left;
+		&:last-child {
+			float: right;
+		}
+	}
+
+
+	&__logo-wrap {
+		margin-right: 23px;
+	}
+	&__logo {
+		font-size: em(28);
+		font-family: "FuturaStdBold";
+		text-transform: uppercase;
+		color: $w;
+	}
+	&__logo-inner {
+		font-family: "FuturaStdLight";
+	}
+
+	&__menu {
+		@include clearfix();
+		padding-top: 10px;
+	}
+	&__menu-item {
+		float: left;
+		border-right: 1px solid $w;
+		&:last-child {
+			border-right: none;
+		}
+	}
+	&__menu-link {
+		padding: 5px 13px;
+		font-family: "Arial";
+		font-size: em(15);
+		color: $w;
+	}
+
+	&__scl-list {
+		@include clearfix();
+		padding-top: 5px;
+	}
+	&__scl-item {
+		float: left;
+		margin-left: 10px;
+		@include size(30px);
+	}
+	&__scl-link {
+		display: block;
+		@include size(100%);
+		border-radius: 4px;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		@include transition(.2s);
+		background: $w url(../images/scl-sprite.png);
+		&:hover {
+			opacity: .8;
+		}
+	}
+	&__pin-link {
+		background-position: -58px -8px;
+	}
+	&__tw-link {
+		background-position: -106px -10px;
+	}
+	&__fb-link {
+		background-position: -9px -10px;
+	}
 }

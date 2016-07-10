@@ -15,7 +15,7 @@
 		font-size: em(12);
 		font-family: "GothamBook";
 		&:before {
-			content: '';
+			content: "";
 			display: inline-block;
 			vertical-align: middle;
 			position: relative;
@@ -57,7 +57,7 @@
 			color: $p;
 		}
 	}
-	&__logo-extra {
+	&__logo-inner {
 		margin-left: 1px;
 		font-family: "FuturaStdLight";
 		color: #201f1f;
@@ -98,7 +98,7 @@
 		border: 2px solid transparent;
 		border-radius: 50%;
 		&:before {
-			content: '';
+			content: "";
 			display: inline-block;
 			vertical-align: middle;
 			@include size(17px);

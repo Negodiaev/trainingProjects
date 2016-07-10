@@ -63,3 +63,27 @@
 	height: 18px;
 	background-position: -49px -105px;
 }
+
+.scl-sprite {
+	background-image: url(spritesheet.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.scl-sprite-icon-fb {
+	width: 30px;
+	height: 30px;
+	background-position: -10px -10px;
+}
+
+.scl-sprite-icon-pin {
+	width: 25px;
+	height: 25px;
+	background-position: -60px -10px;
+}
+
+.scl-sprite-icon-tw {
+	width: 30px;
+	height: 30px;
+	background-position: -105px -10px;
+}
