@@ -17,15 +17,12 @@ a {
 	h1 {
 		font-size: $fontSize*2;
 		line-height: $lineHeight*2;
-		margin-bottom: $lineHeight;
 	}
 	h2 {
 		font-size: $fontSize*1.5;
 		line-height: $lineHeight*1.5;
-		margin-bottom: $lineHeight;
 	}
 	h3 {
-		margin-bottom: $lineHeight;
 	}
 	h4 {
 		font-size: $fontSize;
@@ -44,12 +41,9 @@ a {
 	}
 	img {
 		display: block;
-		margin: 0 0 $lineHeight;
 		&.align-left {
-			margin: 0 $lineHeight $lineHeight 0;
 		}
 		&.align-right {
-			margin: 0 0 $lineHeight $lineHeight;
 		}
 		&.align-center {
 			margin-left: auto;
@@ -57,8 +51,6 @@ a {
 		}
 	}
 	blockquote {
-		margin-bottom: $lineHeight;
-		padding-left: $lineHeight;
 		font-style: italic;
 		p {
 			margin-bottom: 0;
@@ -66,7 +58,6 @@ a {
 	}
 	hr {
 		clear: both;
-		margin-bottom: $lineHeight;
 		border: 0;
 		border-bottom: 1px solid $light-gray;
 		&.transparent {
@@ -75,29 +66,22 @@ a {
 	}
 	ul {
 		overflow: hidden;
-		margin-bottom: $lineHeight;
 		list-style: inside disc;
 		li {
-			padding-left: $lineHeight;
 		}
 	}
 	ol {
 		overflow: hidden;
-		margin-bottom: $lineHeight;
 		list-style: inside decimal;
 		li {
-			padding-left: $lineHeight;
 		}
 	}
 	table {
-		margin-bottom: $lineHeight;
 		th {
-			padding: $lineHeight/2 $lineHeight;
 			background: $light-gray;
 			border: 1px solid $light-gray;
 		}
 		td {
-			padding: $lineHeight/2 $lineHeight;
 			border: 1px solid $light-gray;
 		}
 	}

@@ -122,14 +122,14 @@
 	position: relative;
 	float: left;
 	margin-right: .5%;
-	padding: 19px 50px 31px;
+	padding: 19px 50px 26px;
 	width: 33%;
 	border: 1px solid rgba(0, 0, 0, 0.09);
 	border-radius: 2px;
 	font-family: "GothamLight";
 	text-align: center;
 	text-transform: uppercase;
-	cursor: pointer;
+	// cursor: pointer;
 	opacity: 0.98;
 	color: $b;
 	background-color: $w;
@@ -150,8 +150,10 @@
 	&__title {
 		margin-bottom: 5px;
 		font-size: em(40);
+		cursor: default;
 	}
 	&__img-wrap {
+		display: inline-block;
 		position: relative;
 		margin: 0 auto 18px;
 		@include size(173px);
@@ -170,6 +172,7 @@
 		top: 50%; left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	
 	&__goods-number {
 		font-size: em(15);
 		line-height: 1;
@@ -257,9 +260,11 @@
 	}
 
 	&__brand-logo {
+		display: inline-block;
 		height: 50px;
 	}
 	&__item-img-wrap {
+		display: block;
 		margin-bottom: 20px;
 		height: 160px;
 		border-bottom: 1px solid #e1e0df;
@@ -280,6 +285,10 @@
 		line-height: 1;
 		text-align: left;
 		color: $b;
+		&:hover {
+			text-decoration: underline;
+			color: $b;
+		}
 	}
 
 	&__item-link {

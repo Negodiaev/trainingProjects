@@ -9,14 +9,11 @@
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
 	-ms-touch-action: pan-y;
-	touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
 }
 .slick-list {
 	position: relative;
-	// overflow: hidden;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -27,7 +24,7 @@
 
 	&.dragging {
 		cursor: pointer;
-		cursor: hand;
+		// cursor: hand;
 	}
 }
 .slick-slider .slick-track,
@@ -76,7 +73,7 @@
 	display: none;
 
 	&.dragging img {
-		pointer-events: none;
+		// pointer-events: none;
 	}
 
 	.slick-initialized & {
