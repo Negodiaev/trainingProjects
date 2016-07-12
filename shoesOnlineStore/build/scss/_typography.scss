@@ -1,0 +1,88 @@
+/*** Typography ***/
+$em-base: 14px; // Default font-size value
+a {
+	color: $link;
+	text-decoration: none;
+	background-color: $tr;
+	@include transition(color $df, background-color $df, border-color $df);
+	&:hover {
+		color: $link-hover;
+	}
+	&.underline {
+		text-decoration: underline;
+	}
+}
+.wysiwyg {
+	@extend .clearfix;
+	h1 {
+		font-size: $fontSize*2;
+		line-height: $lineHeight*2;
+	}
+	h2 {
+		font-size: $fontSize*1.5;
+		line-height: $lineHeight*1.5;
+	}
+	h3 {
+	}
+	h4 {
+		font-size: $fontSize;
+		line-height: $lineHeight;
+	}
+	h5 {
+		font-size: $fontSize;
+		line-height: $lineHeight;
+	}
+	h6 {
+		font-size: $fontSize;
+		line-height: $lineHeight;
+	}
+	p {
+				
+	}
+	img {
+		display: block;
+		&.align-left {
+		}
+		&.align-right {
+		}
+		&.align-center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	blockquote {
+		font-style: italic;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	hr {
+		clear: both;
+		border: 0;
+		border-bottom: 1px solid $light-gray;
+		&.transparent {
+			border-bottom-color: $transparent;
+		}
+	}
+	ul {
+		overflow: hidden;
+		list-style: inside disc;
+		li {
+		}
+	}
+	ol {
+		overflow: hidden;
+		list-style: inside decimal;
+		li {
+		}
+	}
+	table {
+		th {
+			background: $light-gray;
+			border: 1px solid $light-gray;
+		}
+		td {
+			border: 1px solid $light-gray;
+		}
+	}
+}
