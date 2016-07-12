@@ -1,1 +1,1 @@
-# Shoes. Online store project
+# [Shoes. Online store project](https://negodiaev.github.io/trainingProjects/shoesOnlineStore/build/index.html "Click to see the project")
