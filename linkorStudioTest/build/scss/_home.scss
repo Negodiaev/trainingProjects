@@ -1,0 +1,283 @@
+/*** Home ***/
+.page-content {
+	background: url(../images/bg-content.jpg) 100% 0 repeat-y;
+}
+
+/* Benefits block */
+.benefits {
+	padding-left: 28px;
+	background: $bg;
+}
+
+.benefits-image {
+	float: left;
+	margin-top: -123px;
+	width: 35%;
+}
+
+.benefits-info {
+	float: left;
+	padding: 0 0 70px 50px;
+	width: 65%;
+	ul {
+		margin-bottom: 28px;
+		padding-top: 40px;
+	}
+	
+	li {
+		position: relative;
+		padding: 0 0 76px 118px;
+		&:first-child {
+			padding-bottom: 56px;
+		}
+		&:last-child {
+			.benefit-text {
+				margin-bottom: 25px;
+			}
+			.benefit-numbers {
+				letter-spacing: 1.5px;
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -15px; left: 0;
+			@include size(70px 67px);
+			background: url(../images/star.png);
+		}
+	}
+}
+
+.benefit-name {
+	margin-bottom: 9px;
+	font-size: rem(52);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .75;
+	text-transform: uppercase;
+	color: $dgr;
+}
+
+.benefit-text {
+	margin-bottom: 16px;
+	font-size: rem(23);
+	line-height: 1.1304;
+	text-transform: lowercase;
+	letter-spacing: .2px;
+	color: $gr;
+}
+
+.benefit-numbers {
+	font-size: rem(54);
+	line-height: .7592;
+	color: $ns;
+}
+
+.benefits-offer {
+	position: relative;
+	margin-bottom: 38px;
+	font-size: 0;
+	.benefits-offer-inner {
+		display: inline-block;
+		vertical-align: top;
+		font-size: rem(29);
+	}
+
+	.benefits-offer-left {
+		position: absolute;
+		top: 7px; left: -195px;
+		width: 180px;
+		line-height: 1.2;
+		text-align: right;
+		font-weight: $font-light;
+		letter-spacing: 1px;
+	}
+
+	.benefits-offer-right {
+		padding-left: 15px;
+		font-size: rem(87);
+		font-family: 'Roboto Condensed', sans-serif;
+		line-height: 1.1494;
+		text-transform: uppercase;
+		letter-spacing: 1.6px;
+		color: $p;
+	}
+}
+
+.benefits-offer-link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 37px;
+	padding: 46px 57px;
+	width: 462px;
+	height: 136px;
+	border: 10px solid $b;
+	font-size: rem(48);
+	font-family: 'HelveticaNeue-CondensedBold', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	white-space: nowrap;
+	color: $text;
+}
+
+/* Profit block */
+.profit {
+	margin: -388px -20px 0 18px;
+	padding: 26px 25px 29px;
+	background: $lgr;
+}
+
+.profit-content {
+	padding: 44px 45px 37px;
+	border: 2px dashed $gr;
+	background: url(../images/bg-profit.jpg) 100% 0 repeat;
+}
+
+.profit-title {
+	margin-bottom: 28px;
+	font-size: rem(75);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .8933;
+	text-align: center;
+	text-transform: uppercase;
+	color: $p;
+}
+
+.profit-subtitle {
+	position: relative;
+	margin-bottom: 91px;
+	padding-left: 12px;
+	font-size: rem(29);
+	line-height: 1.2758;
+	font-weight: $font-light;
+	text-transform: uppercase;
+	letter-spacing: .4px;
+	color: $p;
+	
+	span {
+		font-weight: $font-medium;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -40px; left: 50%;
+		display: block;
+		margin-left: -179px;
+		@include size(358px 2px);
+		background: #d1d3d4;
+	}
+}
+
+// Profit form
+.profit-form {
+	position: relative;
+	margin-bottom: 25px;
+	label {
+		position: relative;
+		display: block;
+		font-size: rem(29);
+		line-height: 1.2758;
+		font-weight: $font-light;
+		letter-spacing: .5px;
+		color: $p;
+
+		&:first-child {
+			margin-bottom: 25px;
+		}
+		&:nth-child(2) {
+			margin-bottom: 35px;
+			input {
+				margin-top: 16px;
+			}
+		}
+		&:nth-child(3) {
+			margin-bottom: 42px;
+			input {
+				margin-top: 11px;
+			}
+		}
+		&:nth-child(4) {
+			input {
+				margin-top: 9px;
+			}
+		}
+	}
+
+	.select-wrap {
+		display: inline-block;
+		margin-top: 18px;
+		@include size(100% 66px);
+		border: 2px solid #d1d3d4;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	select,
+	input {
+		display: inline-block;
+		vertical-align: middle;
+		@include size(100% 66px);
+		font-size: rem(29);
+		line-height: 1.2758;
+		color: $gr;
+		background: #fefefe;
+		box-shadow: inset 0 2px 5px rgba(0, 0, 0, .1);
+	}
+
+	select {
+		padding: 10px 14px;
+		width: 110%;
+		border: none;
+	}
+	input {
+		margin-top: 18px;
+		padding: 7px 22px 15px;
+		border: 2px solid #d1d3d4;
+		border-radius: 3px;
+	}
+	.select-triangle {
+		display: inline-block;
+		position: absolute;
+		bottom: 30px; right: 20px;
+		@include triangle(15px 13px, #594a42, down);
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -32px; left: 50%;
+		display: block;
+		margin-left: -179px;
+		@include size(358px 2px);
+		background: #d1d3d4;
+	}
+}
+
+.profit-result {
+	text-align: center;
+}
+
+.profit-result-text {
+	margin-bottom: 4px;
+	font-size: rem(29);
+	line-height: 2.7241;
+	font-weight: $font-light;
+	text-transform: uppercase;
+	letter-spacing: .25px;
+	color: $s;
+}
+
+.profit-result-number {
+	margin-bottom: 20px;
+	font-size: rem(98);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .8061;
+	letter-spacing: 2px;
+	color: $s;
+}
+
+.profit-result-currency {
+	font-size: rem(29);
+	line-height: 1.2758;
+	font-weight: $font-light;
+	color: $p;
+}

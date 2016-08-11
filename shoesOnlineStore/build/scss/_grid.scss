@@ -8,7 +8,7 @@
 	//background: $tr url('../images/sprite.png') 0 0 no-repeat;
 }
 
-.grid-container{
+.grid-container {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 960px;
@@ -25,18 +25,24 @@
 [class*='col-'] {
 	float: left;
 	min-height: 1px;
-	width: 16.66%;
+	width: 8.3333%;
 	/*-- our gutter --*/
 	// padding: 12px; 
 	// background-color: #ffdcdc;
 }
 
-.col-1{ width: 16.66%; }
-.col-2{ width: 33.33%; }
-.col-3{ width: 50%;    }
-.col-4{ width: 66.66%; }
-.col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }
+.col-1  { width: 8.3333%;  }
+.col-2  { width: 16.6666%; }
+.col-3  { width: 25%;      }
+.col-4  { width: 33.3333%; }
+.col-5  { width: 41.6666%; }
+.col-6  { width: 50%;      }
+.col-7  { width: 58.3333%; }
+.col-8  { width: 66.6666%; }
+.col-9  { width: 75%;      }
+.col-10 { width: 83.3333%; }
+.col-11 { width: 91.6666%; }
+.col-12 { width: 100%;     }
 
 .outline {
 	outline: 1px solid #f6a1a1;

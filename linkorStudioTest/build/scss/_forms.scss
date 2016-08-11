@@ -1,0 +1,11 @@
+/*** Forms ***/
+.select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	// appearance: none;
+	@include border-radius(0);
+}
+.select::-ms-expand {
+	display: none;
+}

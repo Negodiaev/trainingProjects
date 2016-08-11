@@ -1,0 +1,25 @@
+/*** Header ***/
+.page-header {
+	padding: 595px 0 40px;
+	background: url(../images/bg-header.jpg) 50% 0 no-repeat;
+}
+
+.page-header-title {
+	padding-left: 170px;
+	font-size: rem(125);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: .8;
+	font-weight: $font-bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $w;
+}
+
+.page-header-subtitle {
+	&:first-child {
+		margin-left: 225px;
+	}
+	&:nth-child(2) {
+		margin-left: 355px;
+	}
+}

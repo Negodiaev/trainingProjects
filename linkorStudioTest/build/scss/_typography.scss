@@ -1,0 +1,14 @@
+/*** Typography ***/
+$em-base: 16px; // Default font-size value
+a {
+	color: $link;
+	text-decoration: none;
+	background-color: $tr;
+	@include transition(color $df, background-color $df, border-color $df);
+	&:hover {
+		// color: $link-hover;
+	}
+	&.underline {
+		text-decoration: underline;
+	}
+}

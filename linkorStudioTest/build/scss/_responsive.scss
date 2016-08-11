@@ -1,0 +1,238 @@
+/*** Responsive ***/
+@media screen and (max-width: 2060px) {
+	html {
+		font-size: 14px;
+	}
+	.profit {
+		margin: -85px 0 0;
+	}
+}
+
+@media screen and (max-width: 1919px) {
+	.page-header-title {
+		padding-left: 0;
+		font-size: 7rem;
+	}
+	// Benefits
+	.benefits-image {
+		width: 25%;
+	}
+	.benefits-info {
+		padding-right: 20px;
+		width: 75%;
+	}
+	.benefit-name {
+		line-height: 1;
+	}
+	.benefits-offer {
+		.benefits-offer-right {
+			font-size: 4rem;
+		}
+	}
+	.benefits-offer-link {
+		padding: 27px 20px;
+		@include size(380px 100px);
+	}
+	// Profit
+	.profit-content {
+		padding: 15px;
+	}
+	.profit-title {
+		font-size: 3.5rem;
+	}
+	.profit-subtitle {
+		padding-left: 0;
+		font-size: 1.5rem;
+		text-align: center;
+		&:after {
+			margin-left: -125px;
+			width: 250px;
+		}
+	}
+	.profit-form {
+		label {
+			font-size: 1.5rem;
+		}
+		.select-wrap {
+			height: 50px;
+		}
+		select,
+		input {
+			padding: 5px 30px 5px 10px;
+			height: 50px;
+			font-size: 1.4rem;
+		}
+		.select-triangle {
+			bottom: 22px; right: 12px;
+		}
+		&:after {
+			margin-left: -125px;
+			width: 250px;
+		}
+	}
+	.profit-result-text {
+		font-size: 1.5rem;
+	}
+	.profit-result-number {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.page-content {
+		background: $bg;
+	}
+	.profit {
+		margin: 0 auto 80px;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.page-header-title {
+		font-size: 5rem;
+	}
+	.benefits {
+		padding-left: 0;
+	}
+	.benefits-image {
+		width: 35%;
+	}
+	.benefits-info {
+		width: 65%;
+		li {
+			padding: 0 0 60px 90px;
+			&:first-child {
+				padding: 0 0 60px 90px;
+			}
+		}
+	}
+	.benefit-name {
+		font-size: 2.5rem;
+	}
+	.benefit-text {
+		font-size: 1.2rem;
+	}
+	.benefit-numbers {
+		font-size: 2.5rem;
+	}
+	.benefits-offer {
+		.benefits-offer-inner {
+			font-size: 1.5rem;
+		}
+		.benefits-offer-right {
+			font-size: 3rem;
+		}
+	}
+	.benefits-offer-link {
+		padding: 12px;
+		@include size(270px 70px);
+		font-size: 2.2rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.page-header {
+		padding: 605px 0 30px;
+	}
+	.page-header-subtitle {
+		line-height: 1;
+		&:first-child,
+		&:nth-child(2) {
+			margin-left: 0;
+		}
+	}
+	.benefits-image {
+		margin-top: 50px;
+		width: 100%;
+	}
+	.benefits-info {
+		margin-bottom: 60px;
+		padding: 0 15px;
+		width: 100%;
+	}
+	.benefits-offer {
+		margin-bottom: 25px;
+		.benefits-offer-inner {
+			width: 100%;
+		}
+		.benefits-offer-left {
+			position: relative;
+			top: 0; left: 0;
+			margin-bottom: 10px;
+			width: auto;
+			text-align: left;
+		}
+		.benefits-offer-right {
+			padding-left: 0;
+		}
+	}
+	.benefits-offer-link {
+		display: block;
+		margin: 0 auto;
+	}
+	.profit {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 543px) {
+	html {
+		font-size: 12px;
+	}
+	.page-header-title {
+		font-size: 3.5rem;
+	}
+	.benefits-info {
+		padding: 0;
+		li {
+			padding-left: 80px;
+			&:first-child {
+				padding-left: 80px;
+			}
+		}
+	}
+	.benefits-offer {
+		padding-left: 10px;
+		.benefits-offer-right {
+			font-size: 2.5rem;
+		}
+	}
+	.profit-title {
+		font-size: 3rem;
+	}
+	.profit-subtitle {
+		&:after {
+			margin-left: -100px;
+			width: 200px;
+		}
+	}
+	.profit-form {
+		label {
+			font-size: 1.3rem;
+		}
+		select,
+		input {
+			padding: 5px 25px 5px 5px;
+			font-size: 1.2rem;
+		}
+		.select-triangle {
+			right: 10px;
+		}
+		&:after {
+			margin-left: -100px;
+			width: 200px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) { //default
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(xs) {
+}

@@ -1,0 +1,30 @@
+{
+	"name": "alex",
+	"version": "1.0.1",
+	"description": "Boilerplate for html+js+css apps",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Alex",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.11.1",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.0",
+		"gulp-csscomb": "^3.0.7",
+		"gulp-csso": "^2.0.0",
+		"gulp-imagemin": "^2.4.0",
+		"gulp-rigger": "^0.5.8",
+		"gulp-sass": "^2.2.0",
+		"gulp-sourcemaps": "^1.6.0",
+		"gulp-uglify": "^1.5.3",
+		"gulp-uncss": "^1.0.6",
+		"gulp-watch": "^4.3.5",
+		"imagemin-pngquant": "^4.2.2",
+		"rimraf": "^2.5.2"
+	},
+	"dependencies": {
+		"lodash": "^4.7.0"
+	}
+}

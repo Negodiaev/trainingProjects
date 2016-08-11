@@ -1,0 +1,34 @@
+$footer: 100px;
+
+$fontSize: 14px;
+$lineHeight: 24px;
+$fontFamily: 'Roboto', sans-serif;                   $ff: $fontFamily;
+
+$durationFunction: 0.15s ease-in-out;      $df: $durationFunction;
+
+$primary: #25383f;                $p: $primary;
+$secondary: #d26441;              $s: $secondary;
+$background: #f1f2f2;             $bg: $background;
+$text: #000;                      $t: $text;
+$link: #00c;                      $l: $link;
+$link-hover: #c00;                $lh: $link-hover;
+
+$white: #fff;                     $w: $white;
+$black: #000;                     $b: $black;
+$dark-gray: #4d4545;              $dgr: $dark-gray;
+$gray: #a7a9ac;                   $gr: $gray;
+$light-gray: #e9e5e4;             $lgr: $light-gray;
+$green: #0c3;                     $gn: $green;
+$red: #f00;                       $r: $red;
+$numbers: #c49a6c;                $ns: $numbers;
+$transparent: transparent;        $tr: $transparent;
+
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-heavy: 800;
+$font-black: 900;
