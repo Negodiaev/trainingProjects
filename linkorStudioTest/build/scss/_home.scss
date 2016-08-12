@@ -179,6 +179,7 @@
 		line-height: 1.2758;
 		font-weight: $font-light;
 		letter-spacing: .5px;
+		user-select: none;
 		color: $p;
 
 		&:first-child {
@@ -268,6 +269,7 @@
 
 .profit-result-number {
 	margin-bottom: 20px;
+	padding: 0 5px;
 	font-size: rem(98);
 	font-family: 'Roboto Condensed', sans-serif;
 	line-height: .8061;
@@ -280,4 +282,16 @@
 	line-height: 1.2758;
 	font-weight: $font-light;
 	color: $p;
+}
+
+.error-message {
+	display: none;
+	margin-top: 10px;
+	padding: 5px 10px;
+	border: 1px solid $s;
+	color: $s;
+}
+
+.error-message-active {
+	display: inline-block;
 }

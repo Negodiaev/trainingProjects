@@ -1,7 +1,10 @@
 /*** Responsive ***/
-@media screen and (max-width: 2060px) {
+@media screen and (max-width: 2100px) {
 	html {
 		font-size: 14px;
+	}
+	.benefits-info {
+		padding: 0 0 120px 50px;
 	}
 	.profit {
 		margin: -85px 0 0;
@@ -18,7 +21,7 @@
 		width: 25%;
 	}
 	.benefits-info {
-		padding-right: 20px;
+		padding: 0 20px 70px 50px;
 		width: 75%;
 	}
 	.benefit-name {
@@ -74,7 +77,7 @@
 		font-size: 1.5rem;
 	}
 	.profit-result-number {
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
 }
 
@@ -181,7 +184,7 @@
 		font-size: 12px;
 	}
 	.page-header-title {
-		font-size: 3.5rem;
+		font-size: 3.4rem;
 	}
 	.benefits-info {
 		padding: 0;
@@ -223,6 +226,9 @@
 			margin-left: -100px;
 			width: 200px;
 		}
+	}
+	.profit-result-number {
+		font-size: 3.6rem;
 	}
 }
 

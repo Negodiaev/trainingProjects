@@ -98,30 +98,34 @@
 											<label>
 												Выберите культуру
 												<span class="select-wrap">
-													<select class="select" name="agriculture">
-														<option value="1">Пшеница ≈ 3100 грн / т</option>
-														<option value="2">Пшеница ≈ 2900 грн / т</option>
+													<select id="select-one" class="select">
+														<option value="3100">Пшеница ≈ 3100 грн / т</option>
+														<option value="2900">Пшеница ≈ 2900 грн / т</option>
 													</select>
+												<span class="error-message">Пожалуйста, введите число</span>
 												</span>
 												<span class="select-triangle"></span>
 											</label>
-											<label>
+											<label for="input-one">
 												Урожайность, ц/га
-												<input type="text" placeholder="20">
+												<input type="text" id="input-one" class="calc-input" placeholder="20">
+												<span class="error-message">Пожалуйста, введите число</span>
 											</label>
-											<label>
+											<label for="input-two">
 												Стоимость хим. удобрения, грн/га
-												<input type="text" placeholder="3000">
+												<input type="text" id="input-two" class="calc-input" placeholder="3000">
+												<span class="error-message">Пожалуйста, введите число</span>
 											</label>
-											<label>
+											<label for="input-three">
 												Посевная площадь, га
-												<input type="text" placeholder="10">
+												<input type="text" id="input-three" class="calc-input" placeholder="10">
+												<span class="error-message">Пожалуйста, введите число</span>
 											</label>
 										</form>
 									</div>
 									<div class="profit-result">
 										<div class="profit-result-text">Прибыль от добрива</div>
-										<div class="profit-result-number">50 000</div>
+										<div class="profit-result-number form-result">50 000</div>
 										<div class="profit-result-currency">грн</div>
 									</div>
 								</div>
